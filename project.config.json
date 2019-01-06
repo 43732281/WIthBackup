@@ -11,6 +11,7 @@
 	"appid": "wxc205ab0f34854dcb",
 	"projectname": "DMS",
 	"libVersion": "2.2.5",
+	"compileType": "plugin",
 	"condition": {
 		"search": {
 			"current": -1,

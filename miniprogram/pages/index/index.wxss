@@ -136,8 +136,9 @@ page {
   word-break: break-all;
 }
 .container{
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  flex-direction:inherit;
   align-items: left;
   justify-content: space-around;
   padding: 20%;
@@ -183,10 +184,33 @@ font-family: "iconfont" !important;
 
 
 .scanQR{
- width: 80rpx;
-  height: 80rpx;
-  border-width: 10rpx;
+  width: 75rpx;
+  height: 75rpx;
   border-style:solid;
   border-color:#fff; 
   align-content:center;
+}
+.nav {
+    height: 80rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    background: #f7f7f7;
+    font-size: 16px;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.nav-item {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.nav-item.active{
+  background-color: darkgrey;
+  border:  0em;
+    color: white;
 }
